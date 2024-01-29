@@ -1,4 +1,4 @@
-# Puertas Inteligentes con Control Remoto
+# Smart-lock
 
 Este proyecto implementa un sistema de acceso controlado a un laboratorio de sistemas telemáticos. Utiliza la ESP32-CAM para capturar imágenes, que se envían a Telegram para autorización. La aplicación coordina el acceso remoto mediante una cerradura electrónica.
 
