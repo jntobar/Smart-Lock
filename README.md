@@ -7,8 +7,16 @@ Este proyecto implementa una cerradura de puerta WiFi con captura de fotos usand
 - Notificación en Telegram con la foto de la persona.
 - Control remoto de la cerradura desde la aplicación Telegram.
 
-## Circuito
-El circuito utiliza un regulador 7805, un transistor NPN TIP122, y un pulsador. La ESP32-CAM se programa con Arduino IDE.
+## Metodología
+- Diseño prospectivo y controlado.
+- Población objetivo: estudiantes y profesores.
+- Entorno de prueba: laboratorio simulado de FIEC.
+
+## Intervenciones
+- Técnicas: Implementación de la cerradura inteligente.
+- Protocolos: Procedimientos de instalación y uso.
+- Sistemas y Programas: Desarrollo del control de acceso remoto.
+- Mediciones: Registro de variables y pruebas piloto.
 
 ## Componentes Necesarios
 - ESP32-CAM
