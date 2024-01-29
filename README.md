@@ -1,25 +1,29 @@
-# Smart-lock
+# Cerradura de Puerta WiFi con ESP32-CAM y Telegram
 
-Este proyecto implementa un sistema de acceso controlado a un laboratorio de sistemas telemáticos. Utiliza la ESP32-CAM para capturar imágenes, que se envían a Telegram para autorización. La aplicación coordina el acceso remoto mediante una cerradura electrónica.
+Este proyecto implementa una cerradura de puerta WiFi con captura de fotos usando ESP32-CAM y la aplicación Telegram. Permite tomar fotos, desbloquear y bloquear la puerta remotamente.
 
 ## Funcionalidades Principales
-- Captura de Imágenes con ESP32-CAM.
-- Integración con Telegram para autorización.
-- Control de Acceso Remoto con Cerradura Electrónica.
+- Captura de fotos cuando alguien toca el timbre.
+- Notificación en Telegram con la foto de la persona.
+- Control remoto de la cerradura desde la aplicación Telegram.
 
-## Metodología
-- Diseño prospectivo y controlado.
-- Población objetivo: estudiantes y profesores.
-- Entorno de prueba: laboratorio simulado de FIEC.
+## Circuito
+El circuito utiliza un regulador 7805, un transistor NPN TIP122, y un pulsador. La ESP32-CAM se programa con Arduino IDE.
 
-## Intervenciones
-- Técnicas: Implementación de la cerradura inteligente.
-- Protocolos: Procedimientos de instalación y uso.
-- Sistemas y Programas: Desarrollo del control de acceso remoto.
-- Mediciones: Registro de variables y pruebas piloto.
+## Componentes Necesarios
+- ESP32-CAM
+- Cerradura Electrónica 12V
+- Pulsador
+- Fuente de 12VCC
+- Rele 5v de una entrada o tambien se puede adecuar usando estos componentes(Transistor TIP122 NPN, Regulador 7805 5V, Diodo 1N4007, Resistencias de 1k y 10k, Condensador de 100uF 25V)
 
-## Aparatos y Tecnología
-- ESP32-CAM, Telegram, Cerraduras Electrónicas.
+## Configuración de Telegram
+1. Descarga e instala Telegram.
+2. Crea un nuevo BOT usando BotFather.
+3. Obtén la ID de usuario usando IDBot.
 
-Este repositorio proporciona una solución modular para mejorar el acceso a entornos controlados.
+## Programación con Arduino IDE
+Utiliza FTDI232 o Arduino UNO para programar la ESP32-CAM. Instala la biblioteca UniversalTelegramBot.
+Este proyecto ofrece seguridad y control remoto para el acceso a través de una cerradura de puerta WiFi.
+
 
